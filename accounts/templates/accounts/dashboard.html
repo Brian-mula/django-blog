@@ -1,0 +1,12 @@
+{% extends 'accounts/main.html' %} {% block content%}
+<div class="container-fluid">
+  <div class="row">
+    {% for blog in blogs%}
+   <div class="col-md-4 bg-green" >
+    <h4>{{blog.title}}</h4>
+    <p>{{blog.description}}</p>
+   </div>
+   {% endfor%}
+  </div>
+</div>
+{% endblock%}
